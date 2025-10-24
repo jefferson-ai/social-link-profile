@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Nunito&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+body{
+
+    font-family:"nunito",sans-serif,'inter',sans-serif;
+    background-color: #141414;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1.5em;
+}
+
+.card{
+    background-color: #8482821f;
+    color: white;
+    text-align: center;
+    width: 320px;
+    max-width: 100%;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+.profile-picture{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.2rem;
+}
+
+h1{
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+
+h2{
+    color: #c4f82a;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+p{
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-bottom: 1.8em;
+}
+
+.links{
+   display: flex;
+   flex-direction: column;
+   gap: 0.9rem;
+}
+
+.links a{
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    background-color: #333;
+    color: white;
+    padding: 0.8em 1.5em;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+ /*    margin-bottom: 1em; */
+    transition: background-color 0.3s ease-in-out;
+    text-align: center;
+}
+
+.links a:hover{
+    background-color: #c4f82a;
+    color: #444;
+}
+
+@media (max-width: 400px){
+    body{
+        padding: 1rem;
+    }
+
+    .card{
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    .profile-picture{
+        width: 80px;
+        height: 80px;
+    }
+
+    h1{
+        font-size: 1.2rem;
+    }
+
+    h2{
+        font-size: 0.8rem;
+    }
+
+    p{
+        font-size: 0.85rem;
+    }
+
+    .links a{
+        padding: 0.7em 1.2em;
+        font-size: 0.9rem;
+    }
+    
+}
